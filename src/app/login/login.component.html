@@ -1,0 +1,10 @@
+<form #loginForm="ngForm" (submit)="authenticate()">
+    <input type="text" name="username" placeholder="username" [(ngModel)]="UserDetails.username"/>
+    <br><br>
+    <input type="text" name="passwords" placeholder="password" [(ngModel)]="UserDetails.password"/>
+    <br><br>
+    <input type="submit" value="login"/>
+    <br><br>
+    <p *ngIf="flag">Welcome {{name}}</p>
+    
+</form>
